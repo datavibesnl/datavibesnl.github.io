@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.5 Databricks SQL" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.2.1">
+<title data-rh="true">5.5 Databricks SQL | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://datavibesnl.github.io/img/datavibes.png"><meta data-rh="true" name="twitter:image" content="https://datavibesnl.github.io/img/datavibes.png"><meta data-rh="true" property="og:url" content="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.5 Databricks SQL"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="5.5 Databricks SQL | My Site"><meta data-rh="true" name="description" content="- [ ] In this video, we will explore Databricks SQL"><meta data-rh="true" property="og:description" content="- [ ] In this video, we will explore Databricks SQL"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.5 Databricks SQL"><link data-rh="true" rel="alternate" href="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.5 Databricks SQL" hreflang="en"><link data-rh="true" rel="alternate" href="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.5 Databricks SQL" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.e2f063f3.css">
+<script src="/assets/js/runtime~main.135af49c.js" defer="defer"></script>
+<script src="/assets/js/main.f470903c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/datavibes.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/datavibes.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/category/databricks-certified-data-engineer-associate---preparation">Tutorial</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/databricks-certified-data-engineer-associate---preparation">Databricks Certified Data Engineer Associate - Preparation</a><button aria-label="Collapse sidebar category &#x27;Databricks Certified Data Engineer Associate - Preparation&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.1 Course Overview">Introduction</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Databricks Lakehouse Platform/2.1 Delta Lake">Databricks Lakehouse Platform</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/ELT with Spark SQL and Python/3.1 Querying Files">ELT with Spark SQL and Python</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Incremental Data Processing/4.1 Structured Streaming">Incremental Data Processing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.1 Delta Live Tables (Hands On)">Production Pipelines</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.1 Delta Live Tables (Hands On)">5.1 Delta Live Tables (Hands On)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.2 Change Data Capture">5.2 Change Data Capture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.3 Processing CDC Feed with DLT (Hands">5.3 Processing CDC Feed with DLT (Hands On)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.4 Jobs (Hands On)">5.4 Jobs (Hands On)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.5 Databricks SQL">5.5 Databricks SQL</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Data Governance/6.1 Data Objects Privileges">Data Governance</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Certification Overview/7.1 Certification Overview">Certification Overview</a></div></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">intro</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/databricks-certified-data-engineer-associate---preparation"><span itemprop="name">Databricks Certified Data Engineer Associate - Preparation</span></a><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Production Pipelines</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">5.5 Databricks SQL</span><meta itemprop="position" content="3"></li></ul></nav><div class="theme-doc-markdown markdown"><h1>5.5 Databricks SQL</h1>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In this video, we will explore Databricks SQL<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->During all previous videos, we were working in the <strong><code>Data Science &amp; Engineering</code></strong> workspace<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In order to work with Databricks SQL, we need to switch to the SQL persona on top of the sidebar<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Databricks SQL, also known as DBSQL is a data warehouse that allows you to run all your SQL and BI applications at scale and with a unified governance model<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->As you can see in the sidebar, you have new options like SQL editor, Queries, Dashboards, Alerts<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In addition to Data Explorer and SQL warehouses<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us start by clicking on the <strong><code>SQL warehouse</code></strong> tab<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From here, we can create our first SQL warehouse</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>A SQL warehouse is the compute power of Databricks SQL</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>It is a SQL engine or endpoint based on the Spark cluster</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on <strong><code>Create SQL Warehouse</code></strong> to configure a new SQL engine<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Give it a name, say demo warehouse<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Set the cluster size to <strong><code>2x small</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->For this demo, leave all other options as default and click <strong><code>Create</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If it shows you a menu to manage the permissions for the SQL warehouse, leave all other options as default and click Close<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Our SQL warehouse is running and ready to be used<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on <strong><code>Dashboards</code></strong> in the sidebar<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on <strong><code>Visit gallery</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From here, click <strong><code>Import</code></strong>, next to the New York Taxi Trip Analysis option</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Like this, we have created our first dashboard</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we click again on Dashboards in the sidebar<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We can see our sample dashboard we have just created, and I have my name under the <strong><code>Created By</code></strong> field</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Note that from this page, you can also create a new dashboard from scratch</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us click on our dashboard&#x27;s name to reopen it<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We can any time click <strong><code>Refresh</code></strong> to rerun the queries behind each graph and refresh the data<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->To view the query behind any graph, simply click on the three vertical dots on the graph, and select <strong><code>View Query</code></strong> from the menu</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Note here the three tiers namespaces that is used to identify the source table, which are: catalog, database and table name</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>This is a preview of the new functionality to be supported by Unity Catalog</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us click <strong><code>Run</code></strong> to preview the result of this query<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In the <strong><code>Table</code></strong> tab, we can see the query results<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we click on the second tab, we switch to the preview of our graph<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Edit visualization</code></strong> to modify this graph<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From here, you can change the setting of your visualization<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us click <strong><code>Cancel</code></strong> for now<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->To add a new visualization using this query, click the <strong><code>+</code></strong> sign<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Then, <strong><code>Visualization</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us create a pie graph<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We set the <strong><code>X</code></strong> column as day of week<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Add a <strong><code>Y</code></strong> column for fare_amount<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us leave all other settings as defaults and click <strong><code>Save</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the tab to give this visualization a name<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we click on the three vertical dots of this tab. We have the option to add this graph to a dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We select our sample dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We click <strong><code>Add</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us navigate back to the dashboard to view this change<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If you scroll down, you can see your new graph has been successfully added to the dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We can adjust the organization of the graphs in a dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From the three vertical button, click <strong><code>Edit</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We can drag our visualization. Resize it<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us click on <strong><code>Done Editing</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->You can share your dashboard with other users<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click the <strong><code>Share</code></strong> button<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Select, for example, all users from the top field<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Choose <strong><code>Can Run</code></strong> permission<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Add</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From <strong><code>Credentials</code></strong>, you can choose to run using the viewer credentials if the user have access to the underlying data</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>If not, choose the Run As Owner to run the dashboard using the owner credential</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us now navigate to the editor to write some custom queries<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the <strong><code>+</code></strong> button<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Choose create new query</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Make sure you are connected to a SQL warehouse</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the schema browser to select the Sample Catalog<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Select a database, click on <strong><code>Select</code></strong></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Choose NYC Taxi<br></p><p>In this database, we have only one table called trips</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the table name to get a preview of its schema<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us write our first query<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->To add the table name to the query text, we can simply hover over the table name and click this double arrows button</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">SELECT</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">FROM</span><span class="token plain"> nyctaxi</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">trips</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us now click on <strong><code>Run</code></strong> to preview the results<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us update this query by adding a <strong><code>GROUP BY</code></strong> clause on the <strong><code>pickup_zip</code></strong> code</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">SELECT</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    pickup_zip</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token function" style="color:#d73a49">SUM</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">fare_amount</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">AS</span><span class="token plain"> total_fare</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">FROM</span><span class="token plain"> nyctaxi</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">trips</span><br></span><span class="token-line theme-code-block-highlighted-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">GROUP</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">BY</span><span class="token plain"> pickup_zip</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We will add this column again to the <strong><code>SELECT</code></strong> clause. And apply some aggregation function on the <strong><code>fair_amount</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We give this column an alias called <strong><code>total_fare</code></strong></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">SELECT</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    pickup_zip</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line theme-code-block-highlighted-line" style="color:#393A34"><span class="token plain">    </span><span class="token function" style="color:#d73a49">SUM</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">fare_amount</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">AS</span><span class="token plain"> total_fare</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">FROM</span><span class="token plain"> nyctaxi</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">trips</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">GROUP</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">BY</span><span class="token plain"> pickup_zip</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Run</code></strong> to preview the results<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We can save our query by clicking on the <strong><code>Save</code></strong> button<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Give it a name<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->We can also add the query result to a dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the three vertical dots on the <strong><code>Table</code></strong> tab, then <strong><code>Add to Dashboard</code></strong> and we select our sample dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we navigate back to our dashboard, and we scroll down, we can see that our query result has been successfully added to the dashboard<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->You can also set a schedule for the query to refresh the result automatically<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the <strong><code>Schedule</code></strong> button<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Use the dropdown menu to change to refresh <strong><code>every one week at 7 a.m.</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Okay</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we navigate to <strong><code>Queries</code></strong> in the sidebar, we can find our saved query. <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In Databricks SQL, we can use the saved query to set up an alert<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From the left side bar, navigate to <strong><code>Alerts</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <strong><code>Alerts</code></strong> in Databricks SQL allow you to receive notification when a field of your query meets a certain threshold<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Create Alert</code></strong> in the top right<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Select your saved query<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us first give this alert a name, by clicking on the field at the top left of the screen<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->For the <strong><code>Trigger When</code></strong> option, set the value column to <strong><code>total_fare</code></strong>, with a condition greater than <strong><code>10,000</code></strong> threshold<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->For <strong><code>Refresh</code></strong>, we can select <strong><code>Never</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on <strong><code>Create Alert</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the <strong><code>Refresh</code></strong> button to evaluate the alert</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>If the top row value has been updated and exceeded this thresholds, the alert will be triggered and I will receive a notification on this email</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->You can set other destination to receive notifications<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If you click on the <strong><code>Add</code></strong> button, you can choose either an existing alert destination, or create a new destination in the <strong><code>Alert Destinations</code></strong> page<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->As you can see, you have plenty of alerting options like Slack and Microsoft Teams<br></p>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Databricks Certified Data Engineer Associate - Preparation/5. Production Pipelines/5.5 Databricks SQL.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.4 Jobs (Hands On)"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">5.4 Jobs (Hands On)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Data Governance/6.1 Data Objects Privileges"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">6.1 Data Objects Privileges</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

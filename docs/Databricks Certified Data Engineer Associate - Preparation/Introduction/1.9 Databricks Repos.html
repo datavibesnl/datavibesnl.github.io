@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Databricks Certified Data Engineer Associate - Preparation/Introduction/1.9 Databricks Repos" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.2.1">
+<title data-rh="true">1.9 Databricks Repos | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://datavibesnl.github.io/img/datavibes.png"><meta data-rh="true" name="twitter:image" content="https://datavibesnl.github.io/img/datavibes.png"><meta data-rh="true" property="og:url" content="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.9 Databricks Repos"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="1.9 Databricks Repos | My Site"><meta data-rh="true" name="description" content="- [ ] In this lesson, we are going to explore Databricks Repos"><meta data-rh="true" property="og:description" content="- [ ] In this lesson, we are going to explore Databricks Repos"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.9 Databricks Repos"><link data-rh="true" rel="alternate" href="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.9 Databricks Repos" hreflang="en"><link data-rh="true" rel="alternate" href="https://datavibesnl.github.io/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.9 Databricks Repos" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.e2f063f3.css">
+<script src="/assets/js/runtime~main.135af49c.js" defer="defer"></script>
+<script src="/assets/js/main.f470903c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/datavibes.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/datavibes.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/category/databricks-certified-data-engineer-associate---preparation">Tutorial</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/databricks-certified-data-engineer-associate---preparation">Databricks Certified Data Engineer Associate - Preparation</a><button aria-label="Collapse sidebar category &#x27;Databricks Certified Data Engineer Associate - Preparation&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.1 Course Overview">Introduction</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.1 Course Overview">1.1 Course Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.2 What is Databricks">1.2 What is Databricks?</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.3 Get started with Community Edition">1.3 Get started with Community Edition</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.4 Free trial on Azure">1.4 Free trial on Azure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.5 Exploring Workspace">1.5 Exploring Workspace</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.6 Course Materials">1.6 Course Materials</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.7 Creating Cluster">1.7 Creating a Cluster</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.8 Notebook Fundamentals">1.8 Notebook Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.9 Databricks Repos">1.9 Databricks Repos</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Databricks Lakehouse Platform/2.1 Delta Lake">Databricks Lakehouse Platform</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/ELT with Spark SQL and Python/3.1 Querying Files">ELT with Spark SQL and Python</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Incremental Data Processing/4.1 Structured Streaming">Incremental Data Processing</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Production Pipelines/5.1 Delta Live Tables (Hands On)">Production Pipelines</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Data Governance/6.1 Data Objects Privileges">Data Governance</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Certification Overview/7.1 Certification Overview">Certification Overview</a></div></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">intro</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/databricks-certified-data-engineer-associate---preparation"><span itemprop="name">Databricks Certified Data Engineer Associate - Preparation</span></a><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Introduction</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">1.9 Databricks Repos</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>1.9 Databricks Repos</h1>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In this lesson, we are going to explore <strong><code>Databricks Repos</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->As we saw in the previous lecture, notebooks have some basic revision control built in. While this feature is useful, it is fairly basic.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>For example, you cannot merge changes or create branches. In addition, this history can be easily deleted by the user.</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Instead we can use <strong><code>Databricks Repos</code></strong>. <strong><code>Databricks Repos</code></strong> provides source control for your data projects by integrating with GitHub providers <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In order to work with <strong><code>Databricks Repos</code></strong>, we must first configure git integration in our workspace</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-locate-settings-in-databricks-to-setup-git-integration">How to locate settings in Databricks to setup git integration?<a href="#how-to-locate-settings-in-databricks-to-setup-git-integration" class="hash-link" aria-label="Direct link to How to locate settings in Databricks to setup git integration?" title="Direct link to How to locate settings in Databricks to setup git integration?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Under your username in the top bar, choose <strong><code>User settings</code></strong> from the menu <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Go to the <strong><code>git integration</code></strong> tab</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>As you can see from the git provider dropdown menu, Databricks has native integration with several git providers like GitHub and Azure DevOps</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->To connect Databricks to one of the git providers, you need your git service username and a personal access token</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>In this demo we will use GitHub, so let us switch there to get this information</p></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-locate-the-personal-access-token-in-github">How to locate the personal access token in GitHub?<a href="#how-to-locate-the-personal-access-token-in-github" class="hash-link" aria-label="Direct link to How to locate the personal access token in GitHub?" title="Direct link to How to locate the personal access token in GitHub?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In GitHub, click on your avatar in the top bar</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Here it displays the username for the account</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->For the token, let us select <strong><code>Settings</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Scroll to <strong><code>Developer settings</code></strong>. <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From the left choose <strong><code>Personal Access Token</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Choose <strong><code>Tokens (classic)</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click generate a new token, classic token<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In the new personal access token page, specify a note describing the purpose of the token and an expiration date<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Choose <strong><code>Repo scope</code></strong> and scroll to click <strong><code>Generate token</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Here is our token. Let us copy this string now</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-connect-databricks-to-github-with-the-username-and-personal-access-token">How to connect Databricks to GitHub with the username and personal access token?<a href="#how-to-connect-databricks-to-github-with-the-username-and-personal-access-token" class="hash-link" aria-label="Direct link to How to connect Databricks to GitHub with the username and personal access token?" title="Direct link to How to connect Databricks to GitHub with the username and personal access token?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us switch back to our Databricks workspace <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->With GitHub selected as GitHub provider. Let us fill in our GitHub username and personal token <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Save</code></strong></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-create-a-new-repository-in-github">How to create a new repository in GitHub?<a href="#how-to-create-a-new-repository-in-github" class="hash-link" aria-label="Direct link to How to create a new repository in GitHub?" title="Direct link to How to create a new repository in GitHub?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Each Databricks repo maps to a Git repository <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->In order to set up a repo, let&#x27;s first create a repository in GitHub <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Go to the main GitHub landing page and click <strong><code>New</code></strong> to create a repository <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Specify a name for the repository. <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Choose <strong><code>Private</code></strong>. And enable <strong><code>Add a README</code></strong> file <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Create repository</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Copy the HTTPS URL of this newly created repository<br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Switch back to our Databricks workspace <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From the left side bar, go to the <strong><code>Repo</code></strong> tab. Click <strong><code>Add Repo</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Paste here the URL of the Git repository</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Notice that the git provider and the repository name has been filled automatically</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Submit</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Here is our new repo, which contains a local copy of the remote git repository</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-create-a-new-branch-in-databricks">How to create a new branch in Databricks?<a href="#how-to-create-a-new-branch-in-databricks" class="hash-link" aria-label="Direct link to How to create a new branch in Databricks?" title="Direct link to How to create a new branch in Databricks?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us create a new branch named <strong><code>development</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the branch name to open the Repo dialog <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Create branch</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Specify the branch name <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Create</code></strong></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Once created it automatically becomes the current branch</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->With the <strong><code>development</code></strong> branch created and selected, we can now begin making changes as needed <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us create a folder <strong><code>my folder</code></strong>, for example <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Add a notebook <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->You can also import a notebook. From file or URL</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-clone-an-existing-notebook-from-the-workspace">How to clone an existing notebook from the Workspace?<a href="#how-to-clone-an-existing-notebook-from-the-workspace" class="hash-link" aria-label="Direct link to How to clone an existing notebook from the Workspace?" title="Direct link to How to clone an existing notebook from the Workspace?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Or clone an existing notebook from the workspace into the repo <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Go to the <strong><code>Workspace</code></strong> tab <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Next</code></strong> to our Notebook Basics created in the last lecture and select <strong><code>Clone</code></strong><br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Choose my folder and click <strong><code>Clone</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we go back to <strong><code>Databricks Repo</code></strong>, we see that our new folder containing two notebooks <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us now push these changes to our remote repository <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the branch name</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Here we see all our changes</p></div></div>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us first write a commit message <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Commit &amp; push</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->If we switch back now our main branch, as expected, we don&#x27;t see here the new folder and notebooks we created in the <strong><code>development</code></strong> branch</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-create-a-pull-request-in-github">How to create a pull request in GitHub?<a href="#how-to-create-a-pull-request-in-github" class="hash-link" aria-label="Direct link to How to create a pull request in GitHub?" title="Direct link to How to create a pull request in GitHub?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->To be able to pull these changes into the main branch, let us create a pull request in GitHub <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->From here we go to the <strong><code>development</code></strong> branch <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Contribute</code></strong>, <strong><code>Open pull request</code></strong> <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click <strong><code>Create pull request</code></strong>. Then <strong><code>Merge pull request</code></strong>. <strong><code>Confirm merge</code></strong></p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-pull-a-branch-from-github-to-databricks">How to pull a branch from GitHub to Databricks?<a href="#how-to-pull-a-branch-from-github-to-databricks" class="hash-link" aria-label="Direct link to How to pull a branch from GitHub to Databricks?" title="Direct link to How to pull a branch from GitHub to Databricks?">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Let us switch back to our Databricks <strong><code>Workspace</code></strong> to see how to pull this in Databricks repos <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->Click on the branch name to open the repos dialog <br></p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled=""> <!-- -->With the main branch selected, click the <strong><code>Pull</code></strong> button on the right</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Remember pulling regularly is important to avoid conflicts especially when multiple developers are developing on the same branch</p></div></div>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Databricks Certified Data Engineer Associate - Preparation/1. Introduction/1.9 Databricks Repos.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Introduction/1.8 Notebook Fundamentals"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">1.8 Notebook Fundamentals</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/Databricks Certified Data Engineer Associate - Preparation/Databricks Lakehouse Platform/2.1 Delta Lake"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">2.1 Delta Lake</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#how-to-locate-settings-in-databricks-to-setup-git-integration" class="table-of-contents__link toc-highlight">How to locate settings in Databricks to setup git integration?</a></li><li><a href="#how-to-locate-the-personal-access-token-in-github" class="table-of-contents__link toc-highlight">How to locate the personal access token in GitHub?</a></li><li><a href="#how-to-connect-databricks-to-github-with-the-username-and-personal-access-token" class="table-of-contents__link toc-highlight">How to connect Databricks to GitHub with the username and personal access token?</a></li><li><a href="#how-to-create-a-new-repository-in-github" class="table-of-contents__link toc-highlight">How to create a new repository in GitHub?</a></li><li><a href="#how-to-create-a-new-branch-in-databricks" class="table-of-contents__link toc-highlight">How to create a new branch in Databricks?</a></li><li><a href="#how-to-clone-an-existing-notebook-from-the-workspace" class="table-of-contents__link toc-highlight">How to clone an existing notebook from the Workspace?</a></li><li><a href="#how-to-create-a-pull-request-in-github" class="table-of-contents__link toc-highlight">How to create a pull request in GitHub?</a></li><li><a href="#how-to-pull-a-branch-from-github-to-databricks" class="table-of-contents__link toc-highlight">How to pull a branch from GitHub to Databricks?</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
