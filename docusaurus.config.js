@@ -9,9 +9,8 @@ import themeMermaid from '@docusaurus/theme-mermaid';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Learning environment',
+  tagline: 'Welcome to the Learning environment of Datavibes',
   plugins: [require.resolve('docusaurus-lunr-search')],
   // Set the production url of your site here
   url: 'https://datavibesnl.github.io',
@@ -68,7 +67,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/datavibes.png',
       navbar: {
-        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/datavibes.png',
@@ -78,16 +76,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Learning environment',
           }
         ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         additionalLanguages: [
